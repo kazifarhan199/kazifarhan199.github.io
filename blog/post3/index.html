@@ -1,0 +1,144 @@
+<!doctype html >
+<html lang="en">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light dark">
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+    >
+    <link rel="stylesheet" href='/css/base.css'>
+    <title>Hello world!</title>
+  </head>
+  <body>
+    <nav>
+        <ul>
+            <li>
+                <a href="/">
+                    <button class="contrast outline">Farhan Kazi</button>
+                </a>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <a class="contrast" href="/about" style="margin-right: 3px;">
+                    About
+                </a>
+                <a class="contrast" href="/blog">
+                    Blog
+                </a>
+            </li>
+          <li>
+            <button class="contrast outline" onclick="toggleTheme()">
+                <svg xmlns="http://www.w3.org/2000/svg"  fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" style="width: 1rem; height: 1rem;">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z" />
+                  </svg>                  
+            </button></li>
+        </ul>
+    </nav>
+    <hr>
+
+<main class="container">
+
+    <div class="flex" style="justify-content: center;">
+        <img src="/images/background.jpeg" alt="">
+    </div>
+    <h1 style="margin:0px">Post 3</h1>
+    <small>February 1, 2016</small>
+    <br>
+    <br>
+    <details onclick="app(event)">
+        <summary role="button" class="outline contrast">Table Of Contents</summary>
+            <div class="accordion-content">
+                <p><nav id="TableOfContents"></nav></p>
+            </div>
+    </details>
+
+    </div>
+
+    <p>This post has no tags</p>
+
+
+
+</main>
+<footer>
+    <hr>
+<nav
+  aria-label="breadcrumb"
+  style="--pico-nav-breadcrumb-divider: '✨'; justify-content:center;"
+  class="flex"
+>
+  <ul>✨
+    <li><a class="contrast" href="https://github.com/kazifarhan199">Github</a></li>
+    <li><a class="contrast" href="mailto:kazifarhan199@gmail.com">kazifarhan199@gmail.com</a>✨</li>
+  </ul>
+</nav>    
+</footer>
+
+
+
+<script>
+
+    var darkTheme = localStorage.getItem('dark-theme');
+    if (darkTheme === null){
+        var darkTheme = window.matchMedia('(prefers-color-scheme: light)').matches;
+    }
+    if (darkTheme === "false") {darkTheme=false}
+    document.addEventListener('DOMContentLoaded', function() {
+        if (darkTheme){
+            document.documentElement.setAttribute('data-theme', 'dark');
+            darkTheme = false;
+        }else{
+            document.documentElement.setAttribute('data-theme', 'light');
+            darkTheme = true;
+        }
+    });
+
+    function toggleTheme() {             
+        if (darkTheme) {
+            document.documentElement.setAttribute('data-theme', 'dark');
+            localStorage.setItem('dark-theme', true);
+            darkTheme = false
+        } else {
+            document.documentElement.setAttribute('data-theme', 'light');
+            localStorage.setItem('dark-theme', false);
+            darkTheme = true
+        }
+    }
+
+    function navigateTo(path) {
+        window.location.href = path;
+    }
+
+
+
+
+    let blocks = document.querySelectorAll("pre");
+
+    blocks.forEach((block) => {
+        if (navigator.clipboard) {
+            let button = document.createElement("button");
+            
+            button.innerText = "Copy Code";
+            button.classList.add("code-copy-button");
+            button.classList.add("contrast");
+            block.appendChild(button);
+
+            button.addEventListener("click", async () => {
+                await copyCode(block);
+            });
+        }
+    });
+
+    async function copyCode(block) {
+        let code = block.querySelector("code");
+        let text = code.innerText;
+        await navigator.clipboard.writeText(text);
+    }
+</script>
+
+</body>
+</html>
+
+

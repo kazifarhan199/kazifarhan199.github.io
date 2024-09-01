@@ -1,0 +1,128 @@
+p small{
+    font-size: 0.7rem;
+    font-weight: normal;
+}
+p {
+    text-align: justify;
+}
+
+img {
+    max-width: 100%;
+    margin-bottom: 10px;
+}
+
+nav {
+    padding: 12px 25px 0px 25px;
+}
+
+article header{
+    padding: 0px;
+    border: none;
+}
+
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 16px;
+    padding: 16px;
+}
+
+article{
+    margin-bottom: 0px;
+    height: 100%;
+    width: 100%;
+    border: 1px solid rgba(128, 128, 128, 0.382);
+}
+
+article:hover{
+    transform: scale(1.02);
+    transition-duration: 5s;
+}
+
+article img{
+    border-radius: 5px 5px 0px 0px;
+    display: inline;
+}
+
+kbd{
+    font-size: 0.7rem;
+    font-weight: normal;
+    text-decoration: none;
+    padding: 3px 10px;
+}
+
+pre{
+    position: relative;
+}
+.code-copy-button{
+    padding: 3px 10px;
+    font-size: 0.5rem;
+    opacity: 0.4;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.code-copy-button:hover{
+    opacity: 0.7;
+}
+
+
+details[open] summary ~ * {
+    transition: height 0.3s ease, opacity 3s ease;
+    height: auto;
+    opacity: 1;
+    border-radius: 10px;
+}
+
+
+#TableOfContents, #TableOfContents ul, #TableOfContents li{
+    display: block;
+
+}
+#TableOfContents li{
+    list-style: disc;
+    list-style-position: inside;
+    padding: 2px;
+    margin-left: 10px;
+}
+#TableOfContents ul ul{
+    margin-left: 20px;
+}
+#TableOfContents li::before{
+    content: '\2662 \00A0 \00A0';
+    display: inline;
+}
+
+
+@media (min-width: 1000px){
+    .container{
+        max-width: 1000px;
+    }
+}
+
+
+[data-theme="light"], :root:not([data-theme="dark"]) {
+    color-scheme: light;
+    --pico-code-kbd-background-color: #05AAFF;
+
+}
+[data-theme="dark"], :root:not([data-theme="light"]) {
+    --pico-code-kbd-background-color: #05AAFF;
+}
+
+.container img{
+    max-height: 400px;
+}
+
+.container p img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

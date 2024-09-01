@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title></title>
+    <link>/</link>
+    <description>Recent content on </description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>My first content file</title>
+      <link>/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/about/</guid>
+      <description>Web Developer &amp;amp; Data Scientist&#xA;I’m Farhanuddin, a software developer and data scientist based in Minnesota, USA, with a passion for solving complex problems through innovation and technology. My journey began in India, where I earned my Bachelor&amp;rsquo;s in Computer Science, and it led me to Minnesota, where I completed my Master&amp;rsquo;s. Along the way, I&amp;rsquo;ve honed my skills by working on a variety of projects that seamlessly blend creativity with technical expertise, turning intricate challenges into simple, effective solutions.</description>
+    </item>
+  </channel>
+</rss>
