@@ -41,17 +41,29 @@
     <hr>
 
 <main class="container">
-<div class="flex" style="background-image: url(/images/background.jpeg);padding: 60px;">
-    <img src="/images/me.jpg" alt="image of Farhan Kazi" style="border-radius: 50%; width:200px">
-    <h1 style="color: #ffffff;">Farhan Kazi</h1>
-</div>
-    <br>
-    <p>Welcome to my corner of the web, where I share what I’ve been working on and learning in web development and data science. Whether you’re here to find inspiration, pick up new ideas, or just see what I’ve been up to, you’re in the right place. Feel free to explore projects, dive into articles, or simply browse around. I hope you find something that sparks your interest or helps you on your journey.</p>
+<div class="flex" style="height: 80vh; width:100%;justify-content:center;">
+    <div>
+
+        <p class="slide-up">Welcome✨</p>
+        </p>
+        <p>Welcome to my corner of the web, where I share what I’ve been working on and learning in web development and data science. Whether you’re here to find inspiration, pick up new ideas, or just see what I’ve been up to, you’re in the right place. Feel free to explore projects, dive into articles, or simply browse around. I hope you find something that sparks your interest or helps you on your journey.</p>
 <p>Thanks for stopping by—enjoy your visit ✨</p>
 
-    
-    <br>
     <input type="submit" onclick="navigateTo('/blog/')" value="Checkout my Blog" class="outline">
+</div>    
+</div>
+
+<style>
+    .slide-up {
+        font-size: 4rem;
+        overflow: hidden;
+        animation: slide_up 1s ease-in-out;
+    }
+    @keyframes slide_up {
+        0%{ height: 0px;}
+        100%{height: 6rem;}
+    }
+</style>
 
 
 </main>
