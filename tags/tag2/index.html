@@ -110,8 +110,25 @@
 </footer>
 
 
+<div class="flex"
+    style="position: fixed; top:0px; left:0px; height:100%; width:100%; background-color: var(--pico-background-color);"
+    id="preloader">
+    <div style="width:100%; background-color: var(--pico-background-color);">
+        <article
+            style="background-color: var(--pico-background-color);border:0px;box-shadow:none; font-size:200px;text-align:center"
+            aria-busy="true">
+        </article>
+    </div>
+</div>
+
 
 <script>
+    var loader = document.getElementById("preloader");
+    window.addEventListener("load", function () {
+        loader.style.display = "none";
+    });
+
+
 
     var darkTheme = localStorage.getItem('dark-theme');
     if (darkTheme === null){
