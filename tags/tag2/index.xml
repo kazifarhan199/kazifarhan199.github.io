@@ -1,40 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Blogs on </title>
-    <link>/blog/</link>
-    <description>Recent content in Blogs on </description>
+    <title>Tag2 on </title>
+    <link>/tags/tag2/</link>
+    <description>Recent content in Tag2 on </description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Mon, 01 Feb 2016 10:00:00 +0000</lastBuildDate>
-    <atom:link href="/blog/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/tags/tag2/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How to work with HUGO ?</title>
       <link>/blog/post1/</link>
       <pubDate>Mon, 01 Feb 2016 10:00:00 +0000</pubDate>
       <guid>/blog/post1/</guid>
       <description>1. Basics To create a basic HTML website using Hugo you need 2 files a 1 folder.&#xA;config.yml layouts/index.html example layouts/index.html&#xA;&amp;lt;html lang=&amp;#34;en&amp;#34;&amp;gt; &amp;lt;head&amp;gt; &amp;lt;meta charset=&amp;#34;UTF-8&amp;#34;&amp;gt; &amp;lt;meta name=&amp;#34;viewport&amp;#34; content=&amp;#34;width=device-width, initial-scale=1.0&amp;#34;&amp;gt; &amp;lt;title&amp;gt;Hello World&amp;lt;/title&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body&amp;gt; &amp;lt;h1&amp;gt;Hello World&amp;lt;/h1&amp;gt; &amp;lt;/body&amp;gt; &amp;lt;/html&amp;gt; jsdnjfnsd&#xA;heheh heheh Now you can ask hugo to server your website by running hugo server</description>
-    </item>
-    <item>
-      <title>My first content file</title>
-      <link>/blog/post4/</link>
-      <pubDate>Mon, 01 Feb 2016 10:00:00 +0000</pubDate>
-      <guid>/blog/post4/</guid>
-      <description>This is okay</description>
-    </item>
-    <item>
-      <title>Post 2</title>
-      <link>/blog/post2/</link>
-      <pubDate>Mon, 01 Feb 2016 10:00:00 +0000</pubDate>
-      <guid>/blog/post2/</guid>
-      <description>This is post 2</description>
-    </item>
-    <item>
-      <title>Post 3</title>
-      <link>/blog/post3/</link>
-      <pubDate>Mon, 01 Feb 2016 10:00:00 +0000</pubDate>
-      <guid>/blog/post3/</guid>
-      <description>This post has no tags</description>
     </item>
   </channel>
 </rss>

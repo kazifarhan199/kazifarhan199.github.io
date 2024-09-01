@@ -3,11 +3,34 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>/</loc>
+    <lastmod>2016-02-01T10:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/blog/</loc>
+    <lastmod>2016-02-01T10:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/blog/post1/</loc>
+    <lastmod>2016-02-01T10:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/blog/post4/</loc>
+    <lastmod>2016-02-01T10:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/blog/post2/</loc>
+    <lastmod>2016-02-01T10:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/blog/post3/</loc>
+    <lastmod>2016-02-01T10:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/tag1/</loc>
+    <lastmod>2016-02-01T10:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/tag2/</loc>
+    <lastmod>2016-02-01T10:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/</loc>
+    <lastmod>2016-02-01T10:00:00+00:00</lastmod>
   </url><url>
     <loc>/categories/</loc>
   </url><url>
     <loc>/about/</loc>
-  </url><url>
-    <loc>/tags/</loc>
   </url>
 </urlset>

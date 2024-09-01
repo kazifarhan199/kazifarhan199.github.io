@@ -40,27 +40,60 @@
     <hr>
 
 <main class="container">
+    
 
-    <div class="flex" style="justify-content: center;">
-        <img src="/images/background.jpeg" alt="">
-    </div>
-    <h1 style="margin:0px">Post 3</h1>
-    <small>February 1, 2016</small>
-    <br>
-    <br>
-    <details onclick="app(event)">
-        <summary role="button" class="outline contrast">Table Of Contents</summary>
-            <div class="accordion-content">
-                <p><nav id="TableOfContents"></nav></p>
+
+    
+    <nav aria-label="breadcrumb">
+        <ul>
+            <li><a class="contrast" href="/blog/">Blog</a></li>
+                <li><a class="contrast" href="#">Tag2</a></li>
+            </ul>
+    </nav>
+    
+
+
+    
+
+
+    
+    <div class="grid-container">
+        
+            <div>
+    <article  onclick="navigateTo('\/blog\/post1\/')">
+        <header>
+            <img src="/images/background.jpeg" alt="">
+        </header>
+
+        <h5 class="contrast">
+            How to work with HUGO ?
+            <p>
+                <small>
+                    February 1, 2016
+                </small>
+            </p>
+        </h5>
+            <br>
+
+    
+            <div class="flex">
+
+                
+                <a class="contrast tag" href="/tags/tag1">
+                    <kbd>tag1</kbd>
+                    </a>
+                
+                <a class="contrast tag" href="/tags/tag2">
+                    <kbd>tag2</kbd>
+                    </a>
+                
             </div>
-    </details>
 
+    </article>
+</div>
+        
     </div>
-
-    <p>This post has no tags</p>
-
-
-
+    
 </main>
 <footer>
     <hr>
@@ -140,5 +173,4 @@
 
 </body>
 </html>
-
 
