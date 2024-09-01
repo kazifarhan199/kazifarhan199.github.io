@@ -116,6 +116,15 @@
             darkTheme = true
         }
     }
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
+        if (event.matches) {
+            document.documentElement.setAttribute('data-theme', 'dark');
+            localStorage.setItem('dark-theme', true);
+        } else {
+            document.documentElement.setAttribute('data-theme', 'light');
+            localStorage.setItem('dark-theme', false);
+        }
+    });
 
     function navigateTo(path) {
         window.location.href = path;

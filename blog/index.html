@@ -72,13 +72,21 @@
             <div class="flex">
 
                 
-                <a class="contrast tag" href="/tags/tag1">
-                    <kbd>tag1</kbd>
-                    </a>
+                    <a class="contrast tag" href="/tags/tag1">
+    <kbd>
+        tag1
+    </kbd>
+</a>
+
+
                 
-                <a class="contrast tag" href="/tags/tag2">
-                    <kbd>tag2</kbd>
-                    </a>
+                    <a class="contrast tag" href="/tags/tag2">
+    <kbd>
+        tag2
+    </kbd>
+</a>
+
+
                 
             </div>
 
@@ -130,9 +138,13 @@
             <div class="flex">
 
                 
-                <a class="contrast tag" href="/tags/tag1">
-                    <kbd>tag1</kbd>
-                    </a>
+                    <a class="contrast tag" href="/tags/tag1">
+    <kbd>
+        tag1
+    </kbd>
+</a>
+
+
                 
             </div>
 
@@ -228,6 +240,15 @@
             darkTheme = true
         }
     }
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
+        if (event.matches) {
+            document.documentElement.setAttribute('data-theme', 'dark');
+            localStorage.setItem('dark-theme', true);
+        } else {
+            document.documentElement.setAttribute('data-theme', 'light');
+            localStorage.setItem('dark-theme', false);
+        }
+    });
 
     function navigateTo(path) {
         window.location.href = path;

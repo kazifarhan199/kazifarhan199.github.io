@@ -52,27 +52,51 @@
 <h4 id="freemind"><strong>FreeMind</strong></h4>
 <p><img src="https://raw.githubusercontent.com/kazifarhan199/FreeMind-APP/master/images/screenshot.png" alt="FreeMind"><br>
 FreeMind is a mobile application designed to address the mental health challenges faced by college students, especially in the wake of the COVID-19 pandemic. Recognizing the heightened stress and emotional health decline among students, FreeMind aims to provide a supportive platform for social interaction and personalized well-being recommendations. You can find the source code at <a href="https://github.com/kazifarhan199/FreeMind-APP">github.com/kazifarhan199/FreeMind-APP</a></p>
-<p><kbd>
+<p>
+
+
+<kbd>
     Python
 </kbd>
+
+
+
 <kbd>
     Django
 </kbd>
+
+
+
 <kbd>
     Django Rest Framework
 </kbd>
+
+
+
 <kbd>
     Postgres
 </kbd>
+
+
+
 <kbd>
     Rabbitmq
 </kbd>
+
+
+
 <kbd>
     Celery
 </kbd>
+
+
+
 <kbd>
     Nginx
 </kbd>
+
+
+
 <kbd>
     Flutter
 </kbd></p>
@@ -80,21 +104,39 @@ FreeMind is a mobile application designed to address the mental health challenge
 <h4 id="grab-grub"><strong>Grab Grub</strong></h4>
 <p><img src="/images/projects/GrabGrub.jpeg" alt="Grab Grub"><br>
 GrabGrub can help reduce wastage by distributing food among students. GrabGrub helps you reach a potentially larger student group, willing to accept food, through the application’s posting feature. With our Grab Grub, you can spend less time trying to manage food and focus on doing what you like. You can find the source code at <a href="https://github.com/kazifarhan199/GrabGrub-App">github.com/kazifarhan199/GrabGrub-App</a></p>
-<p><kbd>
+<p>
+
+
+<kbd>
     Python
 </kbd>
+
+
+
 <kbd>
     Django
 </kbd>
+
+
+
 <kbd>
     Django Rest Framework
 </kbd>
+
+
+
 <kbd>
     Postgres
 </kbd>
+
+
+
 <kbd>
     Nginx
 </kbd>
+
+
+
 <kbd>
     Flutter
 </kbd></p>
@@ -102,24 +144,45 @@ GrabGrub can help reduce wastage by distributing food among students. GrabGrub h
 <h4 id="chatgpt-clone"><strong>ChatGPT-Clone</strong></h4>
 <p><img src="https://raw.githubusercontent.com/kazifarhan199/ChatGPT-clone/main/assets/desktop-screenshot.png" alt="ChatGPT-Clone"><br>
 ChatGPT-clone is a powerful language model trained to understand and respond to human language. It can be used for a variety of applications such as chatbots, automated customer service, and more. With its advanced natural language processing capabilities, ChatGPT-clone can respond to complex questions, generate human-like text, and improve user engagement.</p>
-<p><kbd>
+<p>
+
+
+<kbd>
     Python
 </kbd>
+
+
+
 <kbd>
     Pandas
 </kbd>
+
+
+
 <kbd>
     PyTorch
 </kbd>
+
+
+
 <kbd>
     Numpy
 </kbd>
+
+
+
 <kbd>
     NLTK
 </kbd>
+
+
+
 <kbd>
     BERT
 </kbd>
+
+
+
 <kbd>
     Django
 </kbd></p>
@@ -194,6 +257,15 @@ ChatGPT-clone is a powerful language model trained to understand and respond to 
             darkTheme = true
         }
     }
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
+        if (event.matches) {
+            document.documentElement.setAttribute('data-theme', 'dark');
+            localStorage.setItem('dark-theme', true);
+        } else {
+            document.documentElement.setAttribute('data-theme', 'light');
+            localStorage.setItem('dark-theme', false);
+        }
+    });
 
     function navigateTo(path) {
         window.location.href = path;
