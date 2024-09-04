@@ -1,6 +1,6 @@
 <!doctype html >
 <html lang="en">
-  <head>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="color-scheme" content="light dark">
@@ -40,34 +40,60 @@
     <hr>
 
 <main class="container">
+    
 
-    <div class="flex" style="justify-content: center;">
-        <img src="/images/background.jpeg" alt="">
-    </div>
-    <h1 style="margin:0px">Post 3</h1>
-    <div>
-        <div class="flex" style="justify-content: space-between;margin-top:10px">
-            <div class="flex" style="gap: 10px;">
-                <img src="/images/me.jpg" alt="Author Image" style="height: 1.5rem; border-radius: 50%">
-                <small>Farhan Kazi</small>
+
+    
+    <nav aria-label="breadcrumb">
+        <ul>
+            <li><a class="contrast" href="/blog/">Blog</a></li>
+                <li><a class="contrast" href="#">Thaughts</a></li>
+            </ul>
+    </nav>
+    
+
+
+    
+
+
+    
+    <div class="grid">
+        
+            <div>
+    <article  onclick="navigateTo('\/blog\/whatiknow\/')">
+        <header>
+            <img src="https://img.freepik.com/premium-photo/light-bulb-as-symbol-creativity-innovation-mixed-media_641298-12812.jpg?w=740" alt="">
+        </header>
+
+        <h5 class="contrast">
+            What I really know ?
+            <p>
+                <small>
+                    September 2, 2024
+                </small>
+            </p>
+        </h5>
+            <br>
+
+    
+            <div class="flex">
+
+                
+                    <a class="contrast tag" href="/tags/thaughts">
+    <kbd>
+        #Thaughts
+    </kbd>
+</a>
+
+
+                
             </div>
-            <small>February 9, 2024</small>
-        </div>
+
+    </article>
+</div>
+        
     </div>
-    <br>
-    <details onclick="app(event)">
-        <summary role="button" class="outline contrast">Table Of Contents</summary>
-            <div class="accordion-content">
-                <p><nav id="TableOfContents"></nav></p>
-            </div>
-    </details>
-
-    </div>
-
-    <p>This post has no tags</p>
-
-
-
+    
 </main>
 <footer>
     <hr>
@@ -173,5 +199,4 @@
 
 </body>
 </html>
-
 

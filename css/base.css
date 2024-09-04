@@ -32,7 +32,7 @@ article{
 
 article:hover{
     transform: scale(1.02);
-    transition-duration: 5s;
+    transition-duration: 0.3s;
 }
 
 article img{
@@ -125,3 +125,10 @@ details[open] summary~* {
 [data-theme="dark"], :root:not([data-theme="light"]) {
     --pico-code-kbd-background-color: #05AAFF;
 }
+
+
+kbd{
+    background: #00a2b7;
+    color: white;
+    font-weight: bold;
+};

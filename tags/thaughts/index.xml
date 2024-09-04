@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Thaughts on </title>
+    <link>//localhost:1313/tags/thaughts/</link>
+    <description>Recent content in Thaughts on </description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 02 Sep 2024 23:27:47 -0500</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/thaughts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>What I really know ?</title>
+      <link>//localhost:1313/blog/whatiknow/</link>
+      <pubDate>Mon, 02 Sep 2024 23:27:47 -0500</pubDate>
+      <guid>//localhost:1313/blog/whatiknow/</guid>
+      <description>I have been programming for almost 7 years, and in this time I have got a Bacholor&amp;rsquo;s in Computer Science and a Master&amp;rsquo;s in Computer Science build a few apps worked on few backend projects and ML too but at the end what do I really know ?&#xA;I know HTML, CSS and JS but no react or react-native.&#xA;I know Flutter but not very well&#xA;I know backend but ony with Python and Django</description>
+    </item>
+  </channel>
+</rss>
