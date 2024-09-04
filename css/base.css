@@ -137,7 +137,7 @@ kbd{
     background-image: url(/images/background.jpeg);
     padding: 60px;
     background-position: 0% 0%;
-    animation: backgroundMove 70s infinite linear;
+    animation: backgroundMove 300s infinite linear;
 }
 
 @keyframes backgroundMove {
